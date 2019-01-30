@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <Button
+            android:text="Purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+
+            android:id="@+id/click_me_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+        <Button
+            android:text="Subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            android:id="@+id/subscribe_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+
+
+        <Button
+            android:text="Consumable purchase report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/consumable_purchase_report_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+
+        <Button
+            android:text="Subscription purchase report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/subscription_purchase_report_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
