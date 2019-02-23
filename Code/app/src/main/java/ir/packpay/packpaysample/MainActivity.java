@@ -17,10 +17,10 @@ import ir.packpay.iablib.data.dto.SubscriptionResponse;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String PASSWORD = "123";
-    private static final String USERNAME = "test";
-    private static final String CLIENT_ID = "oZ5SbYINCPjcOw7Ssdh1";
-    private static final String SECRET_ID = "XbKtSyVabYU66UUw8xR8aNg8A3r1hs";
+    private static final String REFRESH_TOKEN = "d39e1a63-68c3-472e-ac6e-a6056931ab65";
+    private static final String CLIENT_ID = "LoAGzBleII93F6MdQPFr";
+    private static final String SECRET_ID = "lws004ulel3FE2OvSPUbqrISGSOAcQ";
+
 
 
 
@@ -34,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 InternalPurchaseInformationDto dto = new InternalPurchaseInformationDto()
-                        .setUsername(USERNAME)
-                        .setPassword(PASSWORD)
+                        .setRefreshToken(REFRESH_TOKEN)
                         .setClientId(CLIENT_ID)
                         .setClientSecretId(SECRET_ID)
-                        .setServiceCode("119")
-                        .setProductCode("IN_APP_PURCHASE_119_118");
+                        .setServiceCode("124")
+                        .setProductCode("IN_APP_PURCHASE_124_128");
 
 
                 ServiceClient serviceClient = new ServiceClient(getBaseContext(), dto);
@@ -74,8 +73,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 InternalPurchaseInformationDto dto = new InternalPurchaseInformationDto()
-                        .setUsername(USERNAME)
-                        .setPassword(PASSWORD)
+                        .setRefreshToken(REFRESH_TOKEN)
                         .setClientId(CLIENT_ID)
                         .setClientSecretId(SECRET_ID)
                         .setServiceCode("119")
@@ -161,8 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
     private InternalPurchaseInformationDto getDto() {
         return new InternalPurchaseInformationDto()
-                .setUsername(USERNAME)
-                .setPassword(PASSWORD)
+                .setRefreshToken(REFRESH_TOKEN)
                 .setClientId(CLIENT_ID)
                 .setClientSecretId(SECRET_ID);
     }
