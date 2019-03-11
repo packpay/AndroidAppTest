@@ -1,1 +1,1 @@
-include ':app', ':inAppPurchase', ':inAppSDK', ':iablib-release-1.0'
+include ':app', ':inAppPurchase', ':inAppSDK', ':iablib-release-1.2'

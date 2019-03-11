@@ -9,8 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/iablib-release-1.0" />
-            <option value="$PROJECT_DIR$/iablib-release-1.1" />
+            <option value="$PROJECT_DIR$/iablib-release-1.2" />
             <option value="$PROJECT_DIR$/inAppPurchase" />
             <option value="$PROJECT_DIR$/inAppSDK" />
           </set>

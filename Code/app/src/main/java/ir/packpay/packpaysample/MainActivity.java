@@ -37,8 +37,11 @@ public class MainActivity extends AppCompatActivity {
                         .setRefreshToken(REFRESH_TOKEN)
                         .setClientId(CLIENT_ID)
                         .setClientSecretId(SECRET_ID)
-                        .setServiceCode("124")
-                        .setProductCode("IN_APP_PURCHASE_124_128");
+                        .setServiceCode("138")
+                        .setProductCode("IN_APP_PURCHASE_138_154");
+//                        .setViewOneGateway("BANK");
+//                        .setServiceCode("124")
+//                        .setProductCode("IN_APP_PURCHASE_124_130");
 
 
                 ServiceClient serviceClient = new ServiceClient(getBaseContext(), dto);
@@ -76,14 +79,17 @@ public class MainActivity extends AppCompatActivity {
                         .setRefreshToken(REFRESH_TOKEN)
                         .setClientId(CLIENT_ID)
                         .setClientSecretId(SECRET_ID)
-                        .setServiceCode("119")
-                        .setProductCode("TIME_BASED_DAILY_119_119");
+                        .setServiceCode("138")
+//                        .setViewOneGateway("MCI")
+                        .setProductCode("SUBSCRIPTION_DAILY_138_155");
 
                 ServiceClient serviceClient = new ServiceClient(getBaseContext(), dto);
                 serviceClient.subscribe(dto, new AsyncCallback() {
                     @Override
                     public void onSuccess(Object serverResponse) {
                         Log.i(MainActivity.class.getSimpleName(), "calling subscribe Success");
+                        Toast.makeText(getBaseContext(), "خرید با موفقیت انجام شد", Toast.LENGTH_LONG).show();
+
 
                     }
 
@@ -91,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onFailed(FaultResponse faultResponse) {
                         Log.i(MainActivity.class.getSimpleName(), "calling subscribe failed");
                         Toast.makeText(getBaseContext(), faultResponse.getMessage().toString(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "خرید با موفقیت انجام نشد", Toast.LENGTH_LONG).show();
+
 
                     }
                 });
@@ -103,10 +111,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 InternalPurchaseInformationDto dto = getDto()
-                        .setServiceCode("119")
-                        .setProductCode("IN_APP_PURCHASE_119_118")
+                        .setServiceCode("138")
+                        .setProductCode("IN_APP_PURCHASE_138_154")
                         .setOperator("BANK")
-                        .setUserNumber("09122979012");
+                        .setUserNumber("989132955454");
 
 
                 ServiceClient serviceClient = new ServiceClient(getBaseContext(), dto);
@@ -133,10 +141,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 InternalPurchaseInformationDto dto = getDto()
-                        .setServiceCode("119")
-                        .setProductCode("TIME_BASED_DAILY_119_119")
-                        .setOperator("BANK")
-                        .setUserNumber("989122655214");
+                        .setServiceCode("138")
+                        .setProductCode("SUBSCRIPTION_DAILY_138_155")
+                        .setOperator("MCI")
+                        .setUserNumber("989132957878");
 
                 ServiceClient serviceClient = new ServiceClient(getBaseContext(), dto);
                 serviceClient.subscriptionPurchaseReport(dto, new AsyncCallback() {
