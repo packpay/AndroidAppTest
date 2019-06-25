@@ -17,38 +17,66 @@
 
         <Button
             android:text="Purchase"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="8dp"
-
             android:id="@+id/click_me_btn"
             style="@style/Widget.AppCompat.Button"/>
 
         <Button
             android:text="Subscribe"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="8dp"
             android:id="@+id/subscribe_btn"
             style="@style/Widget.AppCompat.Button"/>
 
-
+        <Button
+            android:text="Get subscription status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/get_subscription_status_btn"
+            style="@style/Widget.AppCompat.Button"/>
 
         <Button
-            android:text="Consumable purchase report"
-            android:layout_width="match_parent"
+            android:text="purchase report"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="8dp" android:id="@+id/consumable_purchase_report_btn"
             style="@style/Widget.AppCompat.Button"/>
 
 
+
+
         <Button
             android:text="Subscription purchase report"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             tools:layout_editor_absoluteX="8dp" android:id="@+id/subscription_purchase_report_btn"
             style="@style/Widget.AppCompat.Button"/>
 
+        <Button
+            android:text="time_based purchase report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/time_based_purchase_report_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+
+
+        <Button
+            android:text="report by refrenceCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/get_report_ref_wallet_btn"
+            style="@style/Widget.AppCompat.Button"/>
+
+
+
+
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
